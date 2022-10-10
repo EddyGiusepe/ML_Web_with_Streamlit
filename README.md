@@ -3,7 +3,7 @@
 Neste repositório usaremos `Streamlit` para criar nosso aplicativo de Machine Learning.
 
 
-![image](https://user-images.githubusercontent.com/69597971/194786229-03e13e0e-058b-4f21-866f-acdbed6df181.png)
+![image](https://user-images.githubusercontent.com/69597971/194786288-56b2ec9e-1dc8-4b91-9dca-633c454a45bd.png)
 
 
 
