@@ -26,7 +26,7 @@ st.write("Paciente:", user_input)
 
 
 # Dados de entrada
-x = df.drop(['Outcome'], 1)
+x = df.drop(['Outcome'], axis=1)
 y = df['Outcome']
 
 
@@ -75,9 +75,16 @@ graf = st.bar_chart(user_input_variables)
 dtc = DecisionTreeClassifier(criterion='entropy', max_depth=3)
 dtc.fit(x_train, y_train)
 
+# Acurácia do modelo
+st.subheader('Acurácia do nosso modelo')
+st.write(accuracy_score(y_test, dtc.predict(x_test))*100)
 
 
+# Se o resultado for igual a “0” ele não possui Diabetes, caso seja igual a “1” ele possui Diabetes.
+#previsão do resultado
+prediction = dtc.predict(user_input_variables)
 
-
+st.subheader('Previsão: ')
+st.write(prediction)
 
 
